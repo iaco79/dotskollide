@@ -35,7 +35,7 @@ https://iaco79.wordpress.com/2014/10/13/addions-the-free-moving-numbers-puzzle/
 	android update project -p .
 	export NDK_MODULE_PATH=./jni 
 	ndk-build
-	ant debugenter'''
+	ant 
 
 
 
