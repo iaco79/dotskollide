@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PlatformWin">
+      <UniqueIdentifier>{0b9817bc-6611-43c5-acd2-780553781ba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformAndroid">
+      <UniqueIdentifier>{c842997f-9147-4af9-8fde-2f9146dd9d1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{f8af93c0-77c7-4613-a64e-1cf3590b13bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{2f4a4288-9be1-4584-bff4-7068d172edc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tonatiuh">
+      <UniqueIdentifier>{652b3a30-67e3-495c-afa0-59b726e7528b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tonatiuh\Controller">
+      <UniqueIdentifier>{e38abfdb-303c-4ca9-b0a7-f7e8f9cef332}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tonatiuh\SceneNode">
+      <UniqueIdentifier>{21b8a203-4e88-49d9-bc06-635f83302169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\menu">
+      <UniqueIdentifier>{ad99147d-24a3-4017-8a7a-75132e1c94da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\irrnode">
+      <UniqueIdentifier>{76fee314-ebc3-4ba1-9d9a-3a469dcaa562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\audio">
+      <UniqueIdentifier>{2ec5947d-d335-4094-b1e6-ac87bb0cfc5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\rocketgui">
+      <UniqueIdentifier>{85bbd6d9-e728-425f-9a65-2893ce61a42d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tonatiuh\springrid">
+      <UniqueIdentifier>{002e6ee0-486b-4073-a105-abfef979ba2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tonatiuh\component">
+      <UniqueIdentifier>{1137462e-1d71-41f7-ae49-8e1c6f8736e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tonatiuh\shaders">
+      <UniqueIdentifier>{7a830eca-aac1-4a4c-9719-bac4069623ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\scripting">
+      <UniqueIdentifier>{a7f588b3-bede-4bd6-affc-9839f9c29d4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\sdl">
+      <UniqueIdentifier>{3fe4266d-2da8-4f05-877b-c32ebb597e22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tonatiuh\spline">
+      <UniqueIdentifier>{f3358fa0-bbf0-4447-9534-3f96adc11296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tonatiuh\gamestate">
+      <UniqueIdentifier>{52809145-7543-4af4-b26e-1dc66817a985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\sensors">
+      <UniqueIdentifier>{b28da06f-9334-4849-8005-f33c4ec2324f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\preferences">
+      <UniqueIdentifier>{c81d9f19-c1ab-4809-aeb9-5027b8b4e01a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\jni\android-activity.cpp">
+      <Filter>PlatformAndroid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\app-android.cpp">
+      <Filter>PlatformAndroid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\GObject.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\GComponent.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\utils\StringUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\GObjectFactory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\GSpriteComponent.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\GTransformComponent.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\GBox2dComponent.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\GIrrlichtComponent.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\GNodeFactory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\GControllerComponent.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\GController.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\GControllerFactory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\GGameState.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\GEventManager.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\GGameApp.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\GGameAppWin.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\GGameManager.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\GGameManagerTonatiuh.cpp">
+      <Filter>tonatiuh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\TControllerFactory.cpp">
+      <Filter>tonatiuh</Filter>
+    </ClCompile>
+    <ClCompile Include="mainG.cpp">
+      <Filter>PlatformWin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\TGameStateDemo.cpp">
+      <Filter>tonatiuh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\controller\TElementController.cpp">
+      <Filter>tonatiuh\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\controller\TSynthetizerController.cpp">
+      <Filter>tonatiuh\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\irrnode\B2dNode.cpp">
+      <Filter>Game\irrnode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\irrnode\Base2dNode.cpp">
+      <Filter>Game\irrnode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\irrnode\SpriteNode.cpp">
+      <Filter>Game\irrnode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\audio\AudioManager.cpp">
+      <Filter>Game\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\rocketgui\CIrrRocketEventReceiver.cpp">
+      <Filter>Game\rocketgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\rocketgui\CIrrRocketGUI.cpp">
+      <Filter>Game\rocketgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\rocketgui\IrrRocketFileInterface.cpp">
+      <Filter>Game\rocketgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\rocketgui\IrrRocketInterface.cpp">
+      <Filter>Game\rocketgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\rocketgui\IrrRocketRenderer.cpp">
+      <Filter>Game\rocketgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\menu\GRocketEvent.cpp">
+      <Filter>Game\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\menu\GRocketEventHandler.cpp">
+      <Filter>Game\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\menu\GRocketEventInstancer.cpp">
+      <Filter>Game\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\rocketgui\GRocketElementGame.cpp">
+      <Filter>Game\rocketgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\springrid\SpringGrid.cpp">
+      <Filter>tonatiuh\springrid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\component\TSpringGridComponent.cpp">
+      <Filter>tonatiuh\component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\TObjectFactory.cpp">
+      <Filter>tonatiuh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\scenenode\SpringNode.cpp">
+      <Filter>tonatiuh\SceneNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\irrnode\BatchedSpriteNode.cpp">
+      <Filter>Game\irrnode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\controller\TPlayerController.cpp">
+      <Filter>tonatiuh\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\TGameStateDemoCrashLogic.cpp">
+      <Filter>tonatiuh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\GGameAppAndroid.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\controller\TShieldController.cpp">
+      <Filter>tonatiuh\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\scenenode\ShieldNode.cpp">
+      <Filter>tonatiuh\SceneNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\shaders\FireworkShader.cpp">
+      <Filter>tonatiuh\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\scenenode\FireworkNode.cpp">
+      <Filter>tonatiuh\SceneNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\controller\TFireworkController.cpp">
+      <Filter>tonatiuh\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\scenenode\EnergyBarNode.cpp">
+      <Filter>tonatiuh\SceneNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\controller\TBitController.cpp">
+      <Filter>tonatiuh\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\controller\TEnergyBarController.cpp">
+      <Filter>tonatiuh\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\controller\TElementCreatorController.cpp">
+      <Filter>tonatiuh\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\scenenode\SpiralNode.cpp">
+      <Filter>tonatiuh\SceneNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\shaders\SpiralShader.cpp">
+      <Filter>tonatiuh\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\scripting\GScriptable.cpp">
+      <Filter>Game\scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\scripting\GScriptManager.cpp">
+      <Filter>Game\scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\TElementsFactory.cpp">
+      <Filter>tonatiuh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\scenenode\JointsNode.cpp">
+      <Filter>tonatiuh\SceneNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\shaders\MetaballShader.cpp">
+      <Filter>tonatiuh\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\shaders\MetaballShaderPre.cpp">
+      <Filter>tonatiuh\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\TGoalManager.cpp">
+      <Filter>tonatiuh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\sdl\SDLFileInterface.cpp">
+      <Filter>Game\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\sdl\SDLFS.cpp">
+      <Filter>Game\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\spline\spline.cpp">
+      <Filter>tonatiuh\spline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\gamestate\TGameStateMainMenu.cpp">
+      <Filter>tonatiuh\gamestate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\gamestate\TGameStateSelectGame.cpp">
+      <Filter>tonatiuh\gamestate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\gamestate\TGameStateOptions.cpp">
+      <Filter>tonatiuh\gamestate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\tonatiuh\gamestate\TGameStateExtras.cpp">
+      <Filter>tonatiuh\gamestate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jni\Game\preferences\PreferencesManager.cpp">
+      <Filter>Game\preferences</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\jni\Game\GameDefines.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\GObject.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\GComponent.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\utils\StringUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\GObjectFactory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\GSpriteComponent.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\GTransformComponent.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\GBox2dComponent.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\GIrrlichtComponent.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\GNodeFactory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\GControllerComponent.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\GController.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\GControllerFactory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\GGameState.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\GEventManager.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\GGameApp.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\GGameAppWin.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\GGameManager.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\GGameManagerTonatiuh.h">
+      <Filter>tonatiuh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\TControllerFactory.h">
+      <Filter>tonatiuh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\TonatiuhDefines.h">
+      <Filter>tonatiuh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\TGameStateDemo.h">
+      <Filter>tonatiuh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\controller\TElementController.h">
+      <Filter>tonatiuh\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\controller\TSynthetizerController.h">
+      <Filter>tonatiuh\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\irrnode\B2dNode.h">
+      <Filter>Game\irrnode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\irrnode\Base2dNode.h">
+      <Filter>Game\irrnode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\irrnode\SpriteNode.h">
+      <Filter>Game\irrnode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\audio\AudioManager.h">
+      <Filter>Game\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\rocketgui\CIrrRocketEventReceiver.h">
+      <Filter>Game\rocketgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\rocketgui\CIrrRocketGUI.h">
+      <Filter>Game\rocketgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\rocketgui\IrrRocketFileInterface.h">
+      <Filter>Game\rocketgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\rocketgui\IrrRocketInterface.h">
+      <Filter>Game\rocketgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\rocketgui\IrrRocketRenderer.h">
+      <Filter>Game\rocketgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\menu\GRocketEvent.h">
+      <Filter>Game\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\menu\GRocketEventHandler.h">
+      <Filter>Game\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\menu\GRocketEventInstancer.h">
+      <Filter>Game\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\rocketgui\GRocketElementGame.h">
+      <Filter>Game\rocketgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\springrid\SpringGrid.h">
+      <Filter>tonatiuh\springrid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\springrid\SpringGridMath.h">
+      <Filter>tonatiuh\springrid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\component\TSpringGridComponent.h">
+      <Filter>tonatiuh\component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\TObjectFactory.h">
+      <Filter>tonatiuh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\scenenode\SpringNode.h">
+      <Filter>tonatiuh\SceneNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\irrnode\BatchedSpriteNode.h">
+      <Filter>Game\irrnode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\controller\TPlayerController.h">
+      <Filter>tonatiuh\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\GGameAppAndroid.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\controller\TShieldController.h">
+      <Filter>tonatiuh\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\scenenode\ShieldNode.h">
+      <Filter>tonatiuh\SceneNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\shaders\FireworkShader.h">
+      <Filter>tonatiuh\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\scenenode\FireworkNode.h">
+      <Filter>tonatiuh\SceneNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\controller\TFireworkController.h">
+      <Filter>tonatiuh\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\scenenode\EnergyBarNode.h">
+      <Filter>tonatiuh\SceneNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\controller\TBitController.h">
+      <Filter>tonatiuh\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\controller\TEnergyBarController.h">
+      <Filter>tonatiuh\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\controller\TElementCreatorController.h">
+      <Filter>tonatiuh\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\scenenode\SpiralNode.h">
+      <Filter>tonatiuh\SceneNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\shaders\SpiralShader.h">
+      <Filter>tonatiuh\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\scripting\GScriptable.h">
+      <Filter>Game\scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\scripting\GScriptManager.h">
+      <Filter>Game\scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\TElementsFactory.h">
+      <Filter>tonatiuh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\scenenode\JointsNode.h">
+      <Filter>tonatiuh\SceneNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\shaders\MetaballShader.h">
+      <Filter>tonatiuh\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\shaders\MetaballShaderPre.h">
+      <Filter>tonatiuh\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\TGoalManager.h">
+      <Filter>tonatiuh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\sdl\SDLFileInterface.h">
+      <Filter>Game\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\sdl\SDLFS.h">
+      <Filter>Game\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\spline\spline.h">
+      <Filter>tonatiuh\spline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\gamestate\TGameStateMainMenu.h">
+      <Filter>tonatiuh\gamestate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\gamestate\TGameStateSelectGame.h">
+      <Filter>tonatiuh\gamestate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\gamestate\TGameStateOptions.h">
+      <Filter>tonatiuh\gamestate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\tonatiuh\gamestate\TGameStateExtras.h">
+      <Filter>tonatiuh\gamestate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jni\Game\preferences\PreferencesManager.h">
+      <Filter>Game\preferences</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="..\jni\android-logger.h">
+      <Filter>PlatformAndroid</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+</Project>

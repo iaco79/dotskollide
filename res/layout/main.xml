@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/linearLayout"
+    >
+
+    
+   <FrameLayout
+  android:id="@+id/framelay"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+     <com.iaco.tonatiuh.IrrlichtGLView
+     android:id="@+id/RTSurfaceView"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:visibility= "visible"
+     />
+     
+   </FrameLayout> 
+   
+    
+</RelativeLayout>
+

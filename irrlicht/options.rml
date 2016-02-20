@@ -1,0 +1,69 @@
+<rml>
+	<head>
+		<title>Main Menu</title>
+		<link type="text/rcss" href="rkt.rcss"/>
+		<link type="text/rcss" href="invader.rcss"/>
+		<style>
+			body 
+			{
+				width: 100%;
+				height: 100%;
+				margin: auto;
+				z-index: 2;
+			}						
+			
+			div#container{
+			   position: absolute;
+			   top: 50%;
+			   margin-top: -200px;/* half of #content height*/
+			   left: 0;
+			   width: 100%;
+			}
+			
+			div#content {
+			   width: 300px;
+			   margin-left: auto;
+			   margin-right: auto;
+			   height: 400px;
+			}
+			
+			
+			div#topblock
+			{
+			    
+				display: block;
+				position:fixed;
+				top: 0px;
+				left:0px;	
+				height: 50px;
+				width: 50px;
+			}
+			
+			
+			
+		</style>
+	</head>
+	<body id="options_menu">
+	
+		<div id="topblock">
+				<buttonsmall  onclick="OnToggleMenu">&nbsp;</buttonsmall>
+		</div>
+		
+
+		<div id="container">
+		<div id="content">
+				
+				
+		<div>Sfx</div>				
+		<button id="optSFX" onclick="onToggleSfx">Off</button>
+		<br/>
+		<div>Musix</div>						
+		<button id="optMusic" onclick="onToggleMsc">Off</button>
+		<br/>
+		<div>Vibrate</div>						
+		<button id="optVibrate" onclick="onToggleVib">Off</button>				
+		</div>
+		</div>
+		
+	</body>
+</rml>

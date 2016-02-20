@@ -1,0 +1,137 @@
+
+SCRIPT:
+
+El script que se llama por el momento debe ser "testLevel.lua"
+
+	El script tiene el siguiente teplate
+	-----------------------------------------------------------
+		 gscriptable = nil
+		 
+		co = coroutine.create(function ()
+		 
+		 
+					-- INICIA script
+					-- aqui poner instrucciones
+					-- ...	
+					-- ...
+					-- ...
+					
+					
+					-- FIN Script
+					
+	
+					-- indicar fin del script
+					gscriptable:OnScriptFinished()
+					
+					 
+				 end)
+
+		function update(lscriptable)
+
+		  gscriptable = lscriptable
+		  
+		  coroutine.resume(co)  
+		  
+		end
+	----------------------------------------------------------
+	
+
+El script corre en grupos de comandos separados por la funcion de LUA "coroutine.yield()" 
+
+	Por default cada coroutine.yield() genera una pausa de 1/2 segundo (500 ms)
+	
+		ej: para generar una pausa de 1 segundos con yield
+		
+			coroutine.yield()  -- pausa 1/2 segundo
+			coroutine.yield()  -- pausa 1/2 segundo 
+			
+	Para generar una pausa especifica en milisegundos usar la funcion Wait(int ms) seguida de un yield (en este caso los 500ms del yield no ocurren)
+		
+		ej: para generar una pausa de 2 segundos
+		
+			gscriptable:Wait(2000); 
+			coroutine.yield()  
+					
+	Para esperar a que la pantala este limpia de elementos antes de continuar usar la funcion WaitForClear(int ms)
+		
+		ej: esperar indefinidamente hasta q la pantalla este limpia de elementos
+		
+			gscriptable:WaitForClear(-1); 
+			coroutine.yield()  
+
+FUNCIONES:
+
+
+Parametros Generales:
+
+- x:  posicion x (-50..50)
+
+- y:  posicion y (-50..50)
+
+
+- element: valor hexadecimal
+
+		byte 2: indica si el elemento es static (esta fijo en la posicion x,y)
+		
+		byte 1: id del elemento:
+			0: Circle
+			1: Heavy Circle
+			2: Triangle
+			3: Square
+			F: Random 
+	
+		byte 0: color del elemento (0,1,2) , aplica solo para elementos 0 y 1
+			0: green 
+			1: yellow
+			2: light blue
+            F: random
+			
+		ejemplos:
+			0x000: circle-green
+			0x001: circle-yellow
+			0x002: circle-light blue 
+			0x010: heavy circle- green
+			0x01F: heavy circle- random color
+			0x020: triangle
+			0x030: square
+			0x120: triangle fijo 
+		
+Funciones:
+
+-gscriptable:CreateElementAtXY         (int x,int y, int element);
+	Crea un elemento en la posicion x,y
+
+-gscriptable:CreateElementAtXYSpeed    (int x,int y, int angle, int speed,int element);
+	Crea un elemento con velocidad lineal, en la posicion x,y
+		angle : angulo de lanzamiento en grados
+		speed: velocidad de lanzamiento en unidades 
+
+-gscriptable:CreateDuo(int x, int y, int radius, int angle, int elementA,  int elementB);
+	Crea 2 elementos en cadenados 
+	radius: radio de la cadena 
+	angle: angulo de rotacion en grados
+	
+
+-gscriptable:CreateTri(int x, int y, int radius, int angle, int elementA,  int elementB, int elementC);
+	Crea 3 elementos en cadenados en triangulo 
+	radius: radio de la cadena en forma de triangulo
+	angle: angulo de rotacion en grados
+	
+-gscriptable:CreateTetra(int x, int y, int radius, int angle,int elementA, int elementB,int elementC, int elementX);
+	Crea 4 elementos en cadenados en triangulo, el 4o elemento va en el centro del triangulo
+	radius: radio de la cadena en forma de triangulo
+	angle: angulo de rotacion en grados
+	
+			
+-gscriptable:WaitForClear(int ms)
+	Crea una pausa hasta que ya no existan elementos visibles o se cumpla timeout en milisegundos, si ms es -1 el timeout es infinito
+ 
+-gscriptable:Wait(int ms)
+	Crea una pausa en milisegundos
+	
+
+-gscriptable:OnScriptFinished() : indica el fin del script, llamar solo 1 vez
+
+
+
+	

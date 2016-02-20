@@ -1,0 +1,151 @@
+<rml>
+	<head>
+		<title>game</title>
+		<link type="text/rcss" href="rkt.rcss"/>
+		<link type="text/rcss" href="invader.rcss"/>
+		<style>
+
+		
+			modea
+			{
+				position: absolute;
+				display: inline-block;
+				width:  48px;
+				height: 48px;
+				top:0px;
+				left:50px;
+				tab-index: auto;
+				background-decorator: image;	
+				background-image: menus.tga 0px 384px 127px 511px;
+			}			
+			modeb
+			{
+				position: absolute;
+				display: inline-block;
+				width:  48px;
+				height: 48px;
+				top:0px;
+				left:50px;
+				tab-index: auto;
+				background-decorator: image;	
+				background-image: menus.tga 128px 384px 255px 511px;
+			}	
+			modec
+			{
+				position: absolute;
+				display: inline-block;
+				width:  48px;
+				height: 48px;
+				top:0px;
+				left:50px;
+				tab-index: auto;
+				background-decorator: image;	
+				background-image: menus.tga 256px 384px 383px 511px;
+			}		
+			
+
+			body
+			{
+				padding: 0px;
+				margin: 0px;
+				width: 100%;
+				height: 100px;
+				z-index: 1;
+				
+			}
+			
+			scoreblock
+			{
+			
+				display: block;
+				position:fixed;
+				top: 50px;
+				width: 100%;
+				height: 50px;
+			}
+
+
+			
+			div
+			{
+				
+				
+				margin: 0px 0px;
+				font-size:36;
+				
+			}
+
+		
+			
+
+		
+
+			div#score_div
+			{
+				
+				position: absolute;				
+				top:0px;
+				right:0px;
+				z-index : 2;
+				padding: 0px 20px 0px 0px;
+				width: 30%;
+				text-align:right;
+				
+			}
+			div#level_div
+			{
+			
+				padding: 0px 0px 0px 20px;			
+				position: absolute;
+				top:0px;
+				left:0px;
+				width: 30%;
+				z-index : 3
+				text-align:left;
+			}
+			
+			
+			div#topblock
+			{
+			    
+				display: block;
+				position:fixed;
+				top: 0px;
+				left:0px;	
+				height: 50px;
+				width: 100px;
+				z-index :4;
+				
+			}
+		
+			
+			
+		</style>
+	</head>
+	<body id="game_window">
+			
+		<topblock>
+			<buttonsmall  onclick="ToggleMenu">&nbsp;</buttonsmall>			
+			<modea id="tagModeA">&nbsp;</modea>
+			<modeb id="tagModeB">&nbsp;</modeb>
+			<modec id="tagModeC">&nbsp;</modec>
+			
+		</topblock>	
+		
+		<scoreblock id="scoreblockid">		
+			<div id="level_div">			
+				
+			</div>			
+			
+			
+			<div id="score_div">			
+				<span id="score" />
+			</div>				
+		</scoreblock>
+		
+		
+		
+		
+		
+	</body>
+</rml>
