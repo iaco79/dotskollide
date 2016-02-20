@@ -33,18 +33,17 @@ Requirements:
 * Android SDK 
 * Android NDK
 
+	android update project -p .
+	export NDK_MODULE_PATH=./jni 
+	ndk-build
+	ant debugenter
 
-    android update project -p .
-    export NDK_MODULE_PATH=./jni 
-    ndk-build
-    ant debug
 
 
 ##### HOW TO BUILD - Win32
  Requirements:
 * libGLES emulator lib
 * Visual Studio 2010 or later.
-
 
 	Build GameDemo10.0.sln
 
