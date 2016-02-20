@@ -12,11 +12,11 @@ https://iaco79.wordpress.com/2014/10/13/addions-the-free-moving-numbers-puzzle/
 ### Project structure:
 
 > Source directories:
->* jni/Game/ : game engine files (more like an integrator)
->* jni/tonatiuh : Dots Kollide game code
->* src/ : Android java project
+>* jni/Game/ : Game engine framework.
+>* jni/tonatiuh : Dots Kollide code.
+>* src/ : Android java project.
 >* win32src/ : win32 entry point.
->* assets/ : game assets 
+>* assets/ : game assets.
 
 > Base libraries (source code included) are:
 >* irrlicht : graphics (opengl-es 2.0) 
