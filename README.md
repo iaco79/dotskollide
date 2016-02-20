@@ -26,24 +26,23 @@ https://iaco79.wordpress.com/2014/10/13/addions-the-free-moving-numbers-puzzle/
 >* lua/oolua : basic scripting
 >* box2d : 2d physics
 >* freetype 
-		
 
 #### HOW TO BUILD - Android
-Requirements:
-* Android SDK 
-* Android NDK
+	Requirements:
+		* Android SDK 
+		* Android NDK
 
-```	android update project -p .
+	android update project -p .
 	export NDK_MODULE_PATH=./jni 
 	ndk-build
-	ant debugenter
-```
+	ant debugenter'''
+
 
 
 ##### HOW TO BUILD - Win32
- Requirements:
-* libGLES emulator lib
-* Visual Studio 2010 or later.
+	Requirements:
+		* libGLES emulator lib
+		* Visual Studio 2010 or later.
 
 	*Build GameDemo10.0.sln solution*
 
